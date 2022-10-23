@@ -1,0 +1,48 @@
+﻿<Window x:Class="hw4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hw4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="價格" HorizontalAlignment="Left" Margin="284,91,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="份數" HorizontalAlignment="Left" Margin="361,91,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <StackPanel Orientation="Vertical" Margin="168,120,348,137" >
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="大麥克漢堡(套餐)" FontSize="14"/>
+                <Label Content="150" FontSize="14"/>
+                <TextBox x:Name="sum1" TextWrapping="Wrap" Width="120" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder" FontSize="14" Height="19"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="大麥克漢堡(單點)" FontSize="14"/>
+                <Label Content=" 90 " FontSize="14"/>
+                <TextBox x:Name="sum2" TextWrapping="Wrap" Width="120" FontSize="14" Height="19" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="麥香雞漢堡(套餐)" FontSize="14"/>
+                <Label Content="140" FontSize="14"/>
+                <TextBox x:Name="sum3" TextWrapping="Wrap" Width="120" FontSize="14" Height="19" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="麥香雞漢堡(單點)" FontSize="14"/>
+                <Label Content=" 80 " FontSize="14"/>
+                <TextBox x:Name="sum4" TextWrapping="Wrap" Width="120" FontSize="14" Height="19" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="雙層牛肉堡(套餐)" FontSize="14"/>
+                <Label Content="160" FontSize="14"/>
+                <TextBox x:Name="sum5" TextWrapping="Wrap" Width="120" FontSize="14" Height="19" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="雙層牛肉堡(單點)" FontSize="14"/>
+                <Label Content="100" FontSize="14"/>
+                <TextBox x:Name="sum6" TextWrapping="Wrap" Width="120" FontSize="14" Height="19" Background="#FF88FFE1" BorderBrush="Black" TextChanged="PlaceOrder"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="訂購完成" HorizontalAlignment="Left" Margin="274,301,0,0" VerticalAlignment="Top" FontSize="14" Background="#FF7DDCF5" BorderBrush="#FF7DDCF5" Click="Button_Click"/>
+        <TextBox x:Name="sum7" HorizontalAlignment="Left" Margin="466,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" Height="152" FontSize="14" BorderBrush="#FFDEF397" Background="#FFDEF397"/>
+
+    </Grid>
+</Window>
